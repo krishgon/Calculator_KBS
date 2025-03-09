@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" name="screen" id="screen" value="" disabled>
+        <div class="buttons">
+            <input type="button" value="C" class="clear" onclick="clearScreen()">
+            <input type="button" value="/" class="operator" onclick="appendToScreen('/')">
+            <input type="button" value="*" class="operator" onclick="appendToScreen('*')">
+            <input type="button" value="-" class="operator" onclick="appendToScreen('-')">
+            <input type="button" value="7" class="number" onclick="appendToScreen('7')">
+            <input type="button" value="8" class="number" onclick="appendToScreen('8')">
+            <input type="button" value="9" class="number"onclick="appendToScreen('9')">
+            <input type="button" value="+" class="operator" onclick="appendToScreen('+')">
+            <input type="button" value="4" class="number" onclick="appendToScreen('4')">
+            <input type="button" value="5" class="number" onclick="appendToScreen('5')">
+            <input type="button" value="6" class="number" onclick="appendToScreen('6')">
+            <input type="button" value="=" class="equal" onclick="calculate()">
+            <input type="button" value="1" class="number" onclick="appendToScreen('1')">
+            <input type="button" value="2" class="number" onclick="appendToScreen('2')">
+            <input type="button" value="3" class="number" onclick="appendToScreen('3')">
+            <input type="button" value="0" class="number" onclick="appendToScreen('0')">
+            <input type="button" value="." class="number" onclick="appendToScreen('.')">
+        </div>
+    </div>
+</body>
+</html>
